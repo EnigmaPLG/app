@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head lang="pl-PL">
+	<meta charset="UTF-8">
+	<title>Aplikacja</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="css/fontello.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+	<script src="clock.js" type="text/javascript"></script>
+	<script src="main.js" type="text/javascript"></script>
+</head>
+<body onload="odliczanie();">
+	<div id="box">
+		<nav id="top-nav">
+			<div id="clock"></div>
+		</nav>
+        <div id="content">
+            <div id="car"><img src='car.gif' /></div>
+            <div id="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10356.001914447572!2d20.57209!3d49.54114305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1549838651809" width="800" height="378" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div id="search">
+                <script>
+                    (function () {
+                        var cx = '013209147665837627541:2oofw1_cye4';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
+            <div id="songs">
+                <div class="music">
+                    <iframe width="250" height="100" src="https://www.youtube.com/embed/ALZHF5UqnU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="name">Alone</span>
+                </div>
+                <div class="music">
+                    <iframe width="250" height="100" src="https://www.youtube.com/embed/2vMH8lITTCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="name">Summer</span>
+                </div>
+                <div class="music">
+                    <iframe width="250" height="100" src="https://www.youtube.com/embed/yU0tnrEk8H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="name">Moving On</span>
+                </div>
+                <div class="music">
+                    <iframe width="250" height="100" src="https://www.youtube.com/embed/o1Af8RrmLPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="name">Survival</span>
+                </div>
+                <div class="music">
+                    <iframe width="250" height="100" src="https://www.youtube.com/embed/AvKCib3O03g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="name">Berzek</span>
+                </div>
+                <div class="music">
+                    <iframe width="250" height="100" src="https://www.youtube.com/embed/gfGiCjzz8TE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="name">TEAR$</span>
+                </div>
+                </div>
+                <div id="contacts">
+                    <ul>
+                        <li><img src="">John Smith</li>
+                        <li><img src="">Jakub Nowak</li>
+                        <li><img src="">Adam Krasucki</li>
+                        <li><img src="">Ewa Kowalska</li>
+                        <li><img src="">Zofia Guc</li>
+                        <li><img src="">Rafał Konieczny</li>
+                    </ul>
+                    <div id="button">Call</div>
+                </div>
+            </div>
+            <nav id="bottom-nav">
+                <ul>
+                    <li><i onclick="toggle_visibility('google-maps'); home('car'); home('search'); home('songs'); home('contacts');" class="icon-location"></i></li>
+                    <li><i onclick="toggle_visibility('contacts'); home('car'); home('search'); home('songs'); home('google-maps');" class="icon-phone"></i></li>
+                    <li><i onclick="home('contacts'); home('search'); home('songs'); home('google-maps'); toggle_visibility('car');" class="icon-home"></i></li>
+                    <li><i onclick="toggle_visibility('songs'); home('car'); home('search'); home('contacts'); home('google-maps');" class=" icon-note-beamed"></i></li>
+                    <li><i onclick="toggle_visibility('search'); home('car'); home('contacts'); home('songs'); home('google-maps');" class="icon-globe"></i></li>
+
+
+                </ul>
+            </nav>
+        </div>
+</body>
